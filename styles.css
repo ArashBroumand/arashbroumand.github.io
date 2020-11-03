@@ -5,19 +5,25 @@ body {
     transition: background-color .5s;
 }
 
+h1 {
+  color: black;
+}
+p {
+  color: black;
+}
+
 .header {
     padding-left: 16px;
+    color: #000000;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Time", "Lato", sans-serif;
     transition: background-color .5s;
     transition: margin-left .5s;
 }
-
-h1 {
-  color: darkblue;
-}
-p {
-  color: darkblue;
+.header:hover {
+  color: #FF0000;
+  text-decoration: bold;
+  padding-left: 16px;
 }
 
 .sidenav {
@@ -30,12 +36,12 @@ p {
   background-color: #111;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-left: 16px;
 }
 
 .sidenav a {
-  padding: 8px 0px 8px 16px;
+  padding: 2px 0px 16px 16px;
   text-decoration: none;
   font-size: 16px;
   color: #DDEEFF;
@@ -45,11 +51,11 @@ p {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-  padding-left: 16px;
+  color: #FF0000;
+  padding-left: 32px;
 }
 
-.sidenav .closebtn {
+.sidenav .togglebtn {
   padding 8px;
   position: absolute;
   top: 0;
