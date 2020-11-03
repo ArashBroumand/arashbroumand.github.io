@@ -6,10 +6,10 @@ body {
 }
 
 h1 {
-  color: black;
+    color: black;
 }
 p {
-  color: black;
+    color: black;
 }
 
 .header {
@@ -21,66 +21,68 @@ p {
     transition: margin-left .5s;
 }
 .header:hover {
-  color: #FF0000;
-  text-decoration: bold;
-  padding-left: 16px;
+    color: #FF0000;
+    text-decoration: bold;
+    padding-left: 16px;
 }
 
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: right;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: right;
+    font-size: 8px;
+    padding-right: 16px;
 }
 
 .sidenav {
-  height: 100%;
-  width: 16px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 80px;
-  padding-left: 16px;
+    height: 100%;
+    width: 16px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    padding-left: 16px;
 }
 
 .sidenav a {
-  padding: 2px 0px 16px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #DDEEFF;
-  display: block;
-  transition: 0.3s;
-  padding-left: 16px;
+    padding: 2px 0px 16px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #DDEEFF;
+    display: block;
+    transition: 0.3s;
+    padding-left: 16px;
 }
 
 .sidenav a:hover {
-  color: #FF0000;
-  padding-left: 32px;
+    color: #FF0000;
+    padding-left: 32px;
 }
 
 .sidenav .togglebtn {
-  padding 8px;
-  position: absolute;
-  top: 0;
-  right: 6px;
-  font-size: 24px;
-  margin-left: 24px;
-  padding-left: 16px;
+    padding 8px;
+    position: absolute;
+    top: 0;
+    right: 6px;
+    font-size: 24px;
+    margin-left: 24px;
+    padding-left: 16px;
 }
 
 #main {
-  transition: margin-left .5s;
-  padding: 16px;
+    transition: margin-left .5s;
+    padding: 16px;
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 16px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 16px;}
+    .sidenav a {font-size: 18px;}
 }
