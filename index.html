@@ -3,13 +3,16 @@
         <title> Arash Broumand </title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script> 
+            let stateNav = 0;
+        </script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     
     <body>
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a> <!-- onclick="closeNav()">&times;</a> -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="/">Home</a>
           <a href="#">Bio</a>
           <a href="#">Reseach</a>
@@ -42,7 +45,9 @@
         </div>
         
         <script>
-            let stateNav = 0
+            function initStateNav() {
+                let stateNav = 0;
+            }
             
             function openNav() {
                 let stateNav = 1;
