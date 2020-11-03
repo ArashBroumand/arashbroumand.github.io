@@ -41,15 +41,6 @@ class NavBar {
     tab_selection(input_tab) {
         console.log("hear you "+input_tab)
         this.selectedTab = input_tab
-        if (this.selectedTab == "Home") {
-            this.read_content("./home.txt");
-        } else if (this.selectedTab == "Bio") {
-            this.read_content("./bio.html");
-        } else if (this.selectedTab == "Research") {
-            this.read_content("./home.html");
-        } else if (this.selectedTab == "Blog") {
-            this.read_content("./home.html");
-        }
     }
 }
 
