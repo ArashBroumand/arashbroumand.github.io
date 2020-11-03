@@ -1,5 +1,5 @@
 body {
-  background-color: #DFEFFF;
+  background-color: "white"; /*#DFEFFF;*/
   font-family: "Time", "Lato", sans-serif;
   transition: background-color .5s;
 }
