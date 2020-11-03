@@ -3,14 +3,16 @@
         <title> Arash Broumand </title>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script> initStateNav() </script>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     
     <body>
+        <script>
+            navBar = new NavBar();
+        </script>
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="navBar.toggleNav()"} >&times;</a> <!--onclick="closeNav()">&times;</a>-->
           <a href="/">Home</a>
           <a href="#">Bio</a>
           <a href="#">Reseach</a>
@@ -18,7 +20,7 @@
         </div>
         
         <div id="main">
-            <span style="font-size:24px;cursor:pointer" onclick="toggleNav()"} >&#9776; menu</span> <!-- onclick="openNav()"} >&#9776; menu</span> -->
+            <span style="font-size:24px;cursor:pointer" onclick="navBar.toggleNav()"} >&#9776; menu</span> <!-- onclick="openNav()"} >&#9776; menu</span> -->
             <br />
             
             <p align="center">
@@ -43,36 +45,35 @@
         </div>
         
         <script>
-            function initStateNav() {
-                let stateNav = 0;
-            }
-            
             function openNav() {
-                let stateNav = 1;
                 document.getElementById("mySidenav").style.width = "160px";
                 document.getElementById("main").style.marginLeft = "160px";
                 document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
             }
 
             function closeNav() {
-                let stateNav = 0;
                 document.getElementById("mySidenav").style.width = "0";
                 document.getElementById("main").style.marginLeft= "0";
                 document.body.style.backgroundColor = "white";
             }
             
-            function toggleNav() {
-                if (stateNav == 0) {
-                    let stateNav = 1;
-                    document.getElementById("mySidenav").style.width = "160px";
-                    document.getElementById("main").style.marginLeft = "160px";
-                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                } 
-                if (stateNav == 1) {
-                    let stateNav = 0;
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main").style.marginLeft= "0";
-                    document.body.style.backgroundColor = "white";
+            class NavBar {
+                constructor() {
+                    this.stateNav = 0
+                }
+                toggleNav() {
+                    if (this.stateNav == 0) {
+                        this.stateNav = 1;
+                        document.getElementById("mySidenav").style.width = "160px";
+                        document.getElementById("main").style.marginLeft = "160px";
+                        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                    } 
+                    if (this.stateNav == 1) {
+                        this.stateNav = 0;
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.getElementById("main").style.marginLeft= "0";
+                        document.body.style.backgroundColor = "white";
+                    }
                 }
             }
                     
