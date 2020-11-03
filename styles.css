@@ -1,7 +1,8 @@
 body {
-  background-color: "white"; /*#DFEFFF;*/
-  font-family: "Time", "Lato", sans-serif;
-  transition: background-color .5s;
+    padding-left: 16px;
+    background-color: "white"; /*#DFEFFF;*/
+    font-family: "Time", "Lato", sans-serif;
+    transition: background-color .5s;
 }
 h1 {
   color: darkblue;
@@ -11,7 +12,7 @@ p {
 }
 .sidenav {
   height: 100%;
-  width: 0;
+  width: 16px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -20,28 +21,32 @@ p {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  padding-left: 16px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 0px 8px 16px;
   text-decoration: none;
   font-size: 16px;
   color: #DDEEFF;
   display: block;
   transition: 0.3s;
+  padding-left: 16px;
 }
 
 .sidenav a:hover {
   color: #f1f1f1;
+  padding-left: 16px;
 }
 
 .sidenav .closebtn {
   padding 8px;
   position: absolute;
   top: 0;
-  right: 12px;
+  right: 6px;
   font-size: 24px;
   margin-left: 24px;
+  padding-left: 16px;
 }
 
 #main {
@@ -50,6 +55,6 @@ p {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+  .sidenav {padding-top: 16px;}
   .sidenav a {font-size: 18px;}
 }
