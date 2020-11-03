@@ -26,6 +26,16 @@ p {
   padding-left: 16px;
 }
 
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: right;
+}
+
 .sidenav {
   height: 100%;
   width: 16px;
