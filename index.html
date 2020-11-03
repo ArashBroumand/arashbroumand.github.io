@@ -16,9 +16,12 @@
             <a href="#">Blog</a>
         </div>
         
-        <div id="main">
-            
+        <div id="header" class="header">
             <span id="menu_hndl" style="font-size:16px;cursor:pointer" onclick="navBar.toggleNav()"} ></span>
+        </div>
+        
+        <div id="main" onclick="navBar.closeNav()">
+
             <br />
             
             <p align="center">
@@ -47,6 +50,17 @@
             class NavBar {
                 constructor() {
                     this.stateNav = 0
+                }
+                closeNav() {
+                    if (this.stateNav == 1) {
+                        console.log(this.stateNav)
+                        this.stateNav = 0;
+                        console.log(this.stateNav)
+                        document.getElementById("mySidenav").style.width = "16px";
+                        document.getElementById("main").style.marginLeft= "16px";
+                        document.body.style.backgroundColor = "white";
+                        document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
+                    }
                 }
                 toggleNav() {
                     if (this.stateNav == 0) {
