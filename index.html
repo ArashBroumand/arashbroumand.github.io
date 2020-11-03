@@ -9,7 +9,6 @@
     
     <body>
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="navBar.toggleNav()"} >&times;</a> <!--onclick="closeNav()">&times;</a>-->
           <a href="/">Home</a>
           <a href="#">Bio</a>
           <a href="#">Reseach</a>
@@ -17,7 +16,8 @@
         </div>
         
         <div id="main">
-            <span style="font-size:24px;cursor:pointer" onclick="navBar.toggleNav()"} >&#9776; menu</span> <!-- onclick="openNav()"} >&#9776; menu</span> -->
+            
+            <span id="menu_hndl" style="font-size:16px;cursor:pointer" onclick="navBar.toggleNav()"} ></span>
             <br />
             
             <p align="center">
@@ -43,18 +43,6 @@
         </div>
         
         <script>
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "160px";
-                document.getElementById("main").style.marginLeft = "160px";
-                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";
-                document.body.style.backgroundColor = "white";
-            }
-            
             class NavBar {
                 constructor() {
                     this.stateNav = 0
@@ -67,6 +55,7 @@
                         document.getElementById("mySidenav").style.width = "160px";
                         document.getElementById("main").style.marginLeft = "160px";
                         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                        document.getElementById("menu_hndl").innerHTML = "&#9776; close";
                     } else {
                         console.log(this.stateNav)
                         this.stateNav = 0;
@@ -74,11 +63,13 @@
                         document.getElementById("mySidenav").style.width = "0";
                         document.getElementById("main").style.marginLeft= "0";
                         document.body.style.backgroundColor = "white";
+                        document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
                     }
                 }
             }
             
             let navBar = new NavBar();       
+            document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
         </script>
     </body>
 </html>
