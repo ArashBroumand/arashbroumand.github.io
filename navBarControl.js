@@ -37,18 +37,6 @@ class NavBar {
             document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
         }
     }
-
-    read_content(filename) {
-        var textFile = new XMLHttpRequest();
-        
-        textFile.open("GET", filename, true);
-        
-        textFile.onload = function()
-        {
-            document.getElementById("inner_span").innerHTML = textFile.responseText;
-        }
-        textFile.send();
-    }
     
     tab_selection(input_tab) {
         console.log("hear you "+input_tab)
@@ -58,9 +46,9 @@ class NavBar {
         } else if (this.selectedTab == "Bio") {
             this.read_content("./bio.html");
         } else if (this.selectedTab == "Research") {
-            this.read_content("home.html");
+            this.read_content("./home.html");
         } else if (this.selectedTab == "Blog") {
-            this.read_content("home.html");
+            this.read_content("./home.html");
         }
     }
 }
