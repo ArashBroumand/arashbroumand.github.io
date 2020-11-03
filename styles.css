@@ -4,12 +4,21 @@ body {
     font-family: "Time", "Lato", sans-serif;
     transition: background-color .5s;
 }
+
+.header {
+    padding-left: 16px;
+    background-color: "white"; /*#DFEFFF;*/
+    font-family: "Time", "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
 h1 {
   color: darkblue;
 }
 p {
   color: darkblue;
 }
+
 .sidenav {
   height: 100%;
   width: 16px;
