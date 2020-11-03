@@ -1,0 +1,70 @@
+class NavBar {
+
+    constructor() {
+        this.stateNav = 0;
+        this.selectedTab = "Home";
+    }
+    
+    closeNav() {
+        if (this.stateNav == 1) {
+            console.log(this.stateNav)
+            this.stateNav = 0;
+            console.log(this.stateNav)
+            document.getElementById("mySidenav").style.width = "16px";
+            document.getElementById("main").style.marginLeft= "16px";
+            document.getElementById("header").style.marginLeft = "16px";
+            document.body.style.backgroundColor = "white";
+            document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
+        }
+    }
+    
+    toggleNav() {
+        if (this.stateNav == 0) {
+            this.stateNav = 1;
+            console.log(this.stateNav)
+            document.getElementById("mySidenav").style.width = "160px";
+            document.getElementById("main").style.marginLeft = "160px";
+            document.getElementById("header").style.marginLeft = "160px";
+            document.body.style.backgroundColor = "#A1A1A1";
+            document.getElementById("menu_hndl").innerHTML = "&#9776; close menu";
+        } else {
+            this.stateNav = 0;
+            console.log(this.stateNav)
+            document.getElementById("mySidenav").style.width = "16px";
+            document.getElementById("main").style.marginLeft= "16px";
+            document.getElementById("header").style.marginLeft = "16px";
+            document.body.style.backgroundColor = "white";
+            document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
+        }
+    }
+
+    read_content(filename) {
+        var textFile = new XMLHttpRequest();
+        
+        textFile.open("GET", filename, true);
+        
+        textFile.onload = function()
+        {
+            document.getElementById("inner_span").innerHTML = textFile.responseText;
+        }
+        textFile.send();
+    }
+    
+    tab_selection(input_tab) {
+        console.log("hear you "+input_tab)
+        this.selectedTab = input_tab
+        if (this.selectedTab == "Home") {
+            this.read_content("./home.txt");
+        } else if (this.selectedTab == "Bio") {
+            this.read_content("./bio.html");
+        } else if (this.selectedTab == "Research") {
+            this.read_content("home.html");
+        } else if (this.selectedTab == "Blog") {
+            this.read_content("home.html");
+        }
+    }
+}
+
+let navBar = new NavBar();       
+
+document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
