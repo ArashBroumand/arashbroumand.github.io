@@ -13,7 +13,7 @@ class NavBar {
             document.getElementById("mySidenav").style.width = "16px";
             document.getElementById("main").style.marginLeft= "16px";
             document.getElementById("header").style.marginLeft = "16px";
-            document.body.style.backgroundColor = "white";
+            // document.body.style.backgroundColor = "white";
             document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
         }
     }
@@ -25,7 +25,7 @@ class NavBar {
             document.getElementById("mySidenav").style.width = "160px";
             document.getElementById("main").style.marginLeft = "160px";
             document.getElementById("header").style.marginLeft = "160px";
-            document.body.style.backgroundColor = "#A1A1A1";
+            // document.body.style.backgroundColor = "#A1A1A1";
             document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
         } else {
             this.stateNav = 0;
@@ -33,7 +33,7 @@ class NavBar {
             document.getElementById("mySidenav").style.width = "16px";
             document.getElementById("main").style.marginLeft= "16px";
             document.getElementById("header").style.marginLeft = "16px";
-            document.body.style.backgroundColor = "white";
+            // document.body.style.backgroundColor = "white";
             document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
         }
     }
