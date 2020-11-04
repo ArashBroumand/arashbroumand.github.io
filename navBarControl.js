@@ -2,7 +2,7 @@ class NavBar {
 
     constructor() {
         this.stateNav = 0;
-        this.selectedTab = "Home";
+        this.selectedTab = "";
     }
     
     closeNav() {
