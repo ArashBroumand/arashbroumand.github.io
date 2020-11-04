@@ -39,8 +39,18 @@ class NavBar {
     }
     
     tab_selection(input_tab) {
-        console.log("hear you "+input_tab)
-        this.selectedTab = input_tab
+        console.log("hear you "+input_tab);
+        this.selectedTab = input_tab;
+        if (this.selectedTab == "Home") {
+            this.closeNav();
+            setTimeout(() => {window.open("./index.html","_self");}, 500);
+        } else if (this.selectedTab == "Bio") {
+            this.closeNav();
+        } else if (this.selectedTab == "Research") {
+            this.closeNav();
+        } else if (this.selectedTab == "Blog") {
+            this.closeNav();
+        }
     }
 }
 
