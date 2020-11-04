@@ -26,7 +26,7 @@ class NavBar {
             document.getElementById("main").style.marginLeft = "160px";
             document.getElementById("header").style.marginLeft = "160px";
             document.body.style.backgroundColor = "#A1A1A1";
-            document.getElementById("menu_hndl").innerHTML = "||| close menu"; </a> // &#9776; 
+            document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
         } else {
             this.stateNav = 0;
             console.log(this.stateNav)
