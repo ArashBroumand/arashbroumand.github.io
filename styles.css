@@ -35,8 +35,7 @@ p {
     color: #000000;
     text-align: right;
     font-size: 12px;
-    padding-bottom: 12px;
-    padding-right: 24px;
+    padding = 16px;
 }
 
 .sidenav {
