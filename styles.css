@@ -1,7 +1,7 @@
 body {
     padding-left: 16px;
     background-color: "white"; /*#DFEFFF;*/
-    font-family: "Time", "Lato", sans-serif;
+    font-family: "Lato", sans-serif;
     transition: background-color .5s;
 }
 
