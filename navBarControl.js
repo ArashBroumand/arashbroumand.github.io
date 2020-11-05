@@ -14,7 +14,7 @@ class NavBar {
             document.getElementById("main").style.marginLeft= "16px";
             document.getElementById("header").style.marginLeft = "16px";
             // document.body.style.backgroundColor = "white";
-            document.getElementById("menu_hndl").innerHTML = "&#9776; open menu";
+            document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
         }
     }
     
