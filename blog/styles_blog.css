@@ -35,8 +35,7 @@ p {
     position: fixed;
     z-index: 1;
     margin: 0px;
-    padding-top: 6px;
-    padding-left: 6px;
+    padding: 12px;
     display: block;
     overflow-x: hidden;
     background-color: #111;
