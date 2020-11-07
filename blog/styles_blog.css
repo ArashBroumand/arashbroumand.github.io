@@ -27,3 +27,21 @@ p {
     font-size: 16px;
     margin: 16px 16px 32px 32px;
 }
+
+.back_icon {
+    position: fixed;
+    top: 0%;
+    background-color: #111;
+    display: block;
+    font-color: #FFFFFF;
+    height: 32px;
+    width: 32px;
+}
+
+.back_icon a {
+    font-color: #DDEEFF;
+}
+
+.back_icon a:hover {
+    font-color: #FF0000;
+}
