@@ -41,6 +41,25 @@ p {
     padding-right = 16px;
 }
 
+.list {
+    padding-left: 32px;
+    font-size:16px;
+    text-decoration: none;
+    color: #111;
+}
+
+.list a {
+    padding-left: 32px;
+    font-size:16px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #DDEEFF;
+}
+
+.list a:hover {
+    color: #FF0000;
+}
+
 .sidenav {
     height: 100%;
     width: 16px;
