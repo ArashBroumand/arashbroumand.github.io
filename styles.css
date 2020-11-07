@@ -80,6 +80,7 @@ dt {
 }*/
 
 dd {
+    display: block;
     font-size:12px;
     text-decoration: none;
     margin: 0 0 0 12px;
