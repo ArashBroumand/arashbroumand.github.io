@@ -42,18 +42,16 @@ p {
 }
 
 .list {
-    padding-left: 32px;
     font-size:16px;
     text-decoration: none;
     color: #111;
 }
 
 .list a {
-    padding-left: 32px;
     font-size:16px;
     text-decoration: none;
     transition: 0.3s;
-    color: #DDEEFF;
+    color: #111;
 }
 
 .list a:hover {
