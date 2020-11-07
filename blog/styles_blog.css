@@ -29,7 +29,7 @@ p {
 
 .back_icon {
     height: 48px;
-    width: 48px;
+    width: 16px;
     position: fixed;
     z-index: 1;
     top: 0;
