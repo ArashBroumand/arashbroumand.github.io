@@ -1,5 +1,6 @@
 body {
     padding-left: 16px;
+    margin-left: 16px;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
