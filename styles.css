@@ -54,20 +54,6 @@ p {
     padding-bottom: 4px;
 }
 
-.list a:link {
-    text-decoration: none;
-    transition: 0.3s;
-    color: #111;
-}
-
-.list a:visited {
-    text-decoration: none;
-    color: #555;
-    
-.list a:hover {
-    color: #FF0000;
-}
-
 .sidenav {
     height: 100%;
     width: 16px;
