@@ -30,7 +30,7 @@ p {
 .back_icon {
     height: 24px;
     width: 48px;
-    margin-top: 60;
+    margin-top: 80;
     margin-left: 0;
     position: fixed;
     z-index: 1;
@@ -43,7 +43,7 @@ p {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     text-decoration: none;
-    align: center;
+    text-align: center;
     
     transition: 0.5s;
 }
