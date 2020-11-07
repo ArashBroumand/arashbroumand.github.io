@@ -46,8 +46,10 @@ class NavBar {
             setTimeout(() => {window.open("./index.html","_self");}, 500);
         } else if (this.selectedTab == "Bio") {
             this.closeNav();
+            setTimeout(() => {window.open("./bio.html","_self");}, 500);
         } else if (this.selectedTab == "Research") {
             this.closeNav();
+            setTimeout(() => {window.open("./research.html","_self");}, 500);
         } else if (this.selectedTab == "Blog") {
             this.closeNav();
             setTimeout(() => {window.open("./blog.html","_self");}, 500);
