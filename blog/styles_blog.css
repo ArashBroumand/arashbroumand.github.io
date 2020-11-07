@@ -31,6 +31,7 @@ p {
 .back_icon {
     position: fixed;
     top: 0%;
+    transition: 0.5s;
     background-color: #111;
     display: block;
     font-color: #FFFFFF;
