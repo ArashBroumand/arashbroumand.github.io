@@ -36,12 +36,13 @@ p {
     left: 0;
     right: 6px;
     
-
     transition: 0.5s;
     overflow-x: hidden;
-    background-color: #000000;
+    background-color: #111;
     display: block;
-    font-color: #FFFFFF;
+    
+    font-family: "Lato", sans-serif;
+    color: #FFFFFF;
     
     padding 8px;
     
@@ -51,9 +52,9 @@ p {
 }
 
 .back_icon a {
-    font-color: #FFFFFF;
+    color: #DDEEFF;
 }
 
 .back_icon a:hover {
-    font-color: #FF0000;
+    color: #FF0000;
 }
