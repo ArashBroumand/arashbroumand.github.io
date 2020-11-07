@@ -3,6 +3,7 @@ body {
     padding-left: 16px;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Lato", sans-serif;
+    line-height: 1.6;
     transition: background-color .5s;
 }
 
