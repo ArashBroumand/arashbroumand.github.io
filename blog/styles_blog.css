@@ -29,25 +29,19 @@ p {
 
 .back_icon {
     height: 48px;
-    width: 16px;
+    width: 48px;
     position: fixed;
     z-index: 1;
-    top: 0;
-    left: 0;
-    right: 6px;
-    
-    transition: 0.5s;
+    margin: 0px;
+    padding: 12px;
+    display: block;
     overflow-x: hidden;
     background-color: #111;
-    display: block;
     
     font-family: "Lato", sans-serif;
-    color: #FFFFFF;
-    
-    padding 8px;
-    
     font-size: 24px;
-    margin-left: 0px;
+    
+    transition: 0.5s;
 }
 
 .back_icon a {
