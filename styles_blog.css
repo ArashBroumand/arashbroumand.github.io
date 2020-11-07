@@ -1,0 +1,26 @@
+body {
+    padding-left: 16px;
+    background-color: "white"; /*#DFEFFF;*/
+    font-family: "Lato", sans-serif;
+}
+
+h {
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.header {
+    font-size: 24px;
+    font-variant: small-caps;
+}
+
+.data {
+    font-size: 12px;
+}
+
+.content {
+    font-size: 16px;
+}
