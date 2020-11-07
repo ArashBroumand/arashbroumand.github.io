@@ -64,6 +64,7 @@ p {
 }
 
 table, th, td {
+    text-decoration: none;
     border: 0px solid black;
     border-collapse: collapse;
 }
