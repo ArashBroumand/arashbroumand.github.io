@@ -50,6 +50,7 @@ class NavBar {
             this.closeNav();
         } else if (this.selectedTab == "Blog") {
             this.closeNav();
+            setTimeout(() => {window.open("./blog.html","_self");}, 500);
         }
     }
 }
