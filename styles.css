@@ -1,6 +1,6 @@
 body {
-    padding-left: 16px;
     margin-left: 16px;
+    padding-left: 16px;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
@@ -14,7 +14,8 @@ p {
 }
 
 .header {
-    padding-left: 16px;
+    margin-left: 16px;
+    /* padding-left: 16px; */
     color: #000000;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Time", "Lato", sans-serif;
@@ -24,7 +25,7 @@ p {
 .header:hover {
     color: #FF0000;
     text-decoration: bold;
-    padding-left: 16px;
+    /*padding-left: 16px;*/
 }
 
 .footer {
@@ -81,7 +82,8 @@ p {
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    margin-left: 16px;
+    padding-top: 16px;
 }
 
 @media screen and (max-height: 400px) {
