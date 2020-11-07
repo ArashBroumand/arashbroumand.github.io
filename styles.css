@@ -63,31 +63,23 @@ p {
     color: #FF0000;
 }
 
-dl {
-    font-size: 1vm;
-    text-decoration: none;
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
 }
-
-dt {
+td {
     font-size: 1vm;
-    float: left;
-    clear: left;
-    width: 20%;
-    text-align: right;
+    font-weight: normal;
+    width: 80%;
+    padding: 5px;
+    text-align: left;
+}
+th {
+    font-size: 1vm;
     font-weight: bold;
-    text-decoration: none;
-}
-
-/*dt::after {
-    content: ":";
-}*/
-
-dd {
-    display: block;
-    font-size: 1vm;
-    text-decoration: none;
-    margin: 0 0 0 2em;
-    padding: 0 0 1em 0;
+	width: 20%;
+    padding: 5px;
+    text-align: right;    
 }
 
 .sidenav {
