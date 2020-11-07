@@ -47,21 +47,24 @@ p {
     color: #111;
 }
 
-.list.dt {
+.list dt {
     padding-bottom: 6px;
 }
-.list.dd {
+.list dd {
     padding-bottom: 4px;
 }
 
-.list a {
-    font-size:16px;
+.list.a:link {
     text-decoration: none;
     transition: 0.3s;
     color: #111;
 }
 
-.list a:hover {
+.list.a:visited {
+    text-decoration: none;
+    color: #555;
+    
+.list.a:hover {
     color: #FF0000;
 }
 
