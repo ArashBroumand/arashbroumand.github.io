@@ -83,7 +83,7 @@ p {
     padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 400px) {
     .sidenav {padding-top: 16px;}
     .sidenav a {font-size: 18px;}
 }
