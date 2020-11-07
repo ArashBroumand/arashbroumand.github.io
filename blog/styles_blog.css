@@ -1,5 +1,4 @@
 body {
-    padding-left: 16px;
     background-color: "white"; /*#DFEFFF;*/
     font-family: "Lato", sans-serif;
 }
@@ -13,34 +12,36 @@ p {
 }
 
 .date {
-    margin: 16px 16px 16px 16px;
+    margin: 16px 16px 16px 32px;
     font-size: 12px;
 }
 
 .header {
-    margin: 16px 16px 32px 16px;
+    margin: 16px 16px 32px 32px;
     font-size: 24px;
     font-variant: small-caps;
 }
 
 .content {
     font-size: 16px;
-    margin: 16px 16px 32px 32px;
+    margin: 16px 16px 32px 48px;
 }
 
 .back_icon {
     position: fixed;
+    margin: 0px;
     top: 0%;
     transition: 0.5s;
-    background-color: #111;
+    background-color: #000000;
     display: block;
     font-color: #FFFFFF;
-    height: 32px;
-    width: 32px;
+    font-size: 8px;
+    height: 16px;
+    width: 16px;
 }
 
 .back_icon a {
-    font-color: #DDEEFF;
+    font-color: #FFFFFF;
 }
 
 .back_icon a:hover {
