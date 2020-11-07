@@ -43,7 +43,7 @@ class NavBar {
         this.selectedTab = input_tab;
         if (this.selectedTab == "Home") {
             this.closeNav();
-            setTimeout(() => {window.open("./index.html","_self");}, 400);
+            setTimeout(() => {window.open("./index.html","_self");}, 500);
         } else if (this.selectedTab == "Bio") {
             this.closeNav();
         } else if (this.selectedTab == "Research") {
