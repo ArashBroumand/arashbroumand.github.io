@@ -60,15 +60,19 @@ p {
 }
 
 dl {
+    font-size:12px;
     padding: 8px;
+    text-decoration: none;
 }
 
 dt {
+    font-size:12px;
     float: left;
     clear: left;
     width: 200px;
     text-align: right;
     font-weight: bold;
+    text-decoration: none;
 }
 
 dt::after {
@@ -76,6 +80,8 @@ dt::after {
 }
 
 dd {
+    font-size:12px;
+    text-decoration: none;
     margin: 0 0 0 16px;
     padding: 0 0 8px 0;
 }
