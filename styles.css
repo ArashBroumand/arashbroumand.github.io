@@ -75,15 +75,15 @@ dt {
     text-decoration: none;
 }
 
-dt::after {
+/*dt::after {
     content: ":";
-}
+}*/
 
 dd {
     font-size:12px;
     text-decoration: none;
-    margin: 0 0 0 16px;
-    padding: 0 0 8px 0;
+    margin: 0 0 0 12px;
+    padding: 0 0 1em 0;
 }
 
 .sidenav {
