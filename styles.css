@@ -94,7 +94,7 @@ th {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 80px;
-    padding-left: 24px;
+    padding-left: 16px;
     font-size: 16px;
 }
 
@@ -130,6 +130,6 @@ th {
 }
 
 @media screen and (max-height: 400px) {
-    .sidenav {padding-top: 16px;}
+    .sidenav {padding-top: 6px;}
     .sidenav a {font-size: 16px;}
 }
