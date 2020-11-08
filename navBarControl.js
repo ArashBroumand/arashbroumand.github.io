@@ -10,9 +10,9 @@ class NavBar {
             console.log(this.stateNav)
             this.stateNav = 0;
             console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "16px";
+            document.getElementById("mySidenav").style.width = "0px";
             document.getElementById("main").style.marginLeft= "16px";
-            document.getElementById("header").style.marginLeft = "16px";
+            document.getElementById("menutoggle").style.marginLeft = "8px";
             // document.body.style.backgroundColor = "white";
             document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
         }
@@ -23,16 +23,16 @@ class NavBar {
             this.stateNav = 1;
             console.log(this.stateNav)
             document.getElementById("mySidenav").style.width = "160px";
-            document.getElementById("main").style.marginLeft = "160px";
-            document.getElementById("header").style.marginLeft = "160px";
+            document.getElementById("main").style.marginLeft = "176px";
+            document.getElementById("menutoggle").style.marginLeft = "168px";
             // document.body.style.backgroundColor = "#A1A1A1";
             document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
         } else {
             this.stateNav = 0;
             console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "16px";
+            document.getElementById("mySidenav").style.width = "0px";
             document.getElementById("main").style.marginLeft= "16px";
-            document.getElementById("header").style.marginLeft = "16px";
+            document.getElementById("menutoggle").style.marginLeft = "8px";
             // document.body.style.backgroundColor = "white";
             document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
         }
@@ -54,6 +54,12 @@ class NavBar {
             this.closeNav();
             setTimeout(() => {window.open("./blog.html","_self");}, 500);
         }
+    }
+    
+    open_link(input_link) {
+        console.log("hear you "+input_link);
+        this.closeNav();
+        setTimeout(() => {window.open(input_link,"_self");}, 500);
     }
 }
 
