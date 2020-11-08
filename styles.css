@@ -152,14 +152,14 @@ table a:hover {
 
 
 @media screen and (max-height: 600px) {
-    body{font-size: 8px;}
-    th, td{font-size: 8px;}
-    .sidenav {padding-top: 8px;}
-    .sidenav a {font-size: 8px;  padding-top: 8px;}
+    body{font-size: 12px;}
+    th, td{font-size: 12px;}
+    .sidenav {padding-top: 12px;}
+    .sidenav a {font-size: 12px;  padding-top: 12px;}
 }
 
 @media screen and (max-width: 600px) {
-    body{font-size: 8px;}
-    th, td{font-size: 8px;}
-    .sidenav a {font-size: 8px; padding-top: 8px;}
+    body{font-size: 12px;}
+    th, td{font-size: 12px;}
+    .sidenav a {font-size: 12px; padding-top: 12px;}
 }
