@@ -17,20 +17,23 @@
             <a href="#Blog" onclick="navBar.tab_selection('Blog')">Blog</a>
         </div>
         
-        <div id="header" class="header">
+        <div id="menutoggle" class="menutoggle">
             <span id="menu_hndl" onclick="navBar.toggleNav()"} ></span>
         </div>
         
         <div id="main" onclick="navBar.closeNav()">
             
-            <p>
-                <h style="font-size:24px; font-variant: small-caps";> Curriculum Vitae </h>
-            </p>
+            <hr />
+            <div class="header">
+                Curriculum Vitae
+                <script language="javascript" type="text/javascript">
+                    var lmdate = document.lastModified;
+                    document.write("<font color='gray' size='1vw'>last modified on "+lmdate.slice(0, 10)+"</font>");
+                </script>
+            </div>
             <hr />
             
-            <script language="javascript" type="text/javascript">
-                document.write("<font color='gray' size='1vm'>last modified on "+document.lastModified+"</font>");
-            </script>
+            
             
             <table>
                 <tr>
