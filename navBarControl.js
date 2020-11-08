@@ -22,9 +22,9 @@ class NavBar {
         if (this.stateNav == 0) {
             this.stateNav = 1;
             console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "160px";
-            document.getElementById("main").style.marginLeft = "176px";
-            document.getElementById("menutoggle").style.marginLeft = "168px";
+            document.getElementById("mySidenav").style.width = "120px";
+            document.getElementById("main").style.marginLeft = "136px";
+            document.getElementById("menutoggle").style.marginLeft = "128px";
             // document.body.style.backgroundColor = "#A1A1A1";
             document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
         } else {
