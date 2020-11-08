@@ -24,7 +24,7 @@ p {
     color: #000000;
     font-family: "Time", "Lato", sans-serif;
     background-color: "white"; /*#DFEFFF;*/
-    cursor:pointer
+    cursor:pointer;
     transition: background-color .5s;
     transition: margin-left .5s;
 }
