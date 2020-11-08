@@ -99,7 +99,7 @@ th {
 }
 
 .sidenav a {
-    padding: 24px 0px 16px 16px;
+    padding: 16px 0px 16px 16px;
     text-decoration: none;
     font-size: 16px;
     color: #DDEEFF;
@@ -119,7 +119,7 @@ th {
     top: 0;
     right: 6px;
     font-size: 16px;
-    margin-left: 24px;
+    margin-left: 16px;
     padding-left: 16px;
 }
 
