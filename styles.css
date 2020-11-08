@@ -93,17 +93,17 @@ th {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 80px;
-    padding-left: 16px;
+    padding-left: 24px;
 }
 
 .sidenav a {
     padding: 2px 0px 16px 16px;
     text-decoration: none;
-    font-size: 1vm;
+    font-size: 24px;
     color: #DDEEFF;
     display: block;
     transition: 0.3s;
-    padding-left: 16px;
+    padding-left: 24px;
 }
 
 .sidenav a:hover {
