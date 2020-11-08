@@ -17,19 +17,20 @@
             <a href="#Blog" onclick="navBar.tab_selection('Blog')">Blog</a>
         </div>
         
-        <div id="header" class="header">
+        <div id="menutoggle" class="menutoggle">
             <span id="menu_hndl" onclick="navBar.toggleNav()"} ></span>
         </div>
         
         <div id="main" onclick="navBar.closeNav()">
             
-            <p>
-                <h style="font-size:24px; font-variant: small-caps";> Occasional Thoughts </h>
-            </p>
+            <hr />
+            <div class="header">
+                Occasional Thoughts
+            </div>
             <hr />
 
             <p class="list">
-                <a href="/blog/the_plague.html">The Plague<a>
+                <a href="#the_plague" onclick="navBar.open_link('./blog/the_plague.html')">The Plague<a>
             </p>
             
             <br />
