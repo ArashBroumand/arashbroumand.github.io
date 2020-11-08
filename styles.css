@@ -18,7 +18,7 @@ p {
 }
 
 .header {
-    font-size: 2vm;
+    font-size: 16px;
     margin-left: 16px;
     /* padding-left: 16px; */
     color: #000000;
@@ -42,8 +42,8 @@ p {
     color: #000000;
     text-align: right;
     font-size: 1vm;
-    padding-bottom = 16px;
-    padding-right = 16px;
+    margin-bottom = 16px;
+    margin-right = 16px;
 }
 
 .list {
@@ -99,7 +99,7 @@ th {
 .sidenav a {
     padding: 2px 0px 16px 16px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 16px;
     color: #DDEEFF;
     display: block;
     transition: 0.3s;
@@ -116,7 +116,7 @@ th {
     position: absolute;
     top: 0;
     right: 6px;
-    font-size: 24px;
+    font-size: 16px;
     margin-left: 24px;
     padding-left: 16px;
 }
