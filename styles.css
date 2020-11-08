@@ -116,7 +116,7 @@ th {
 }
 
 .sidenav .togglebtn {
-    padding 0px;
+    padding-top: 0px;
     position: absolute;
     margin-top: 0;
     margin-right: 8px;
