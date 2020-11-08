@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title> A.Broumand|Research </title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    
+    <body>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="togglebtn" onclick="navBar.toggleNav()"} >|||</a> <!-- &#9776; -->
+            <a href="#Home" onclick="navBar.tab_selection('Home')">Home</a>
+            <a href="#Bio" onclick="navBar.tab_selection('Bio')">Bio</a>
+            <a href="#Research" onclick="navBar.tab_selection('Research')">Research</a>
+            <a href="#Blog" onclick="navBar.tab_selection('Blog')">Blog</a>
+        </div>
+        
+        <div id="header" class="header">
+            <span id="menu_hndl" onclick="navBar.toggleNav()"} ></span>
+        </div>
+        
+        <div id="main" onclick="navBar.closeNav()">
+            
+            <p>
+                <h style="font-size:24px; font-variant: small-caps";> Research </h>
+            </p>
+            <hr />
+
+            Under Construction
+            
+            <br />
+            <hr />
+
+        </div>
+        
+        <script src="navBarControl.js"></script>
+        
+    </body>
+</html>
