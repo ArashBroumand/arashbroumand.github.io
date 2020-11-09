@@ -6,35 +6,30 @@ class NavBar {
     }
     
     closeNav() {
-        if (this.stateNav == 1) {
-            console.log(this.stateNav)
-            this.stateNav = 0;
-            console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "0px";
-            document.getElementById("main").style.marginLeft= "16px";
-            document.getElementById("menutoggle").style.marginLeft = "8px";
-            // document.body.style.backgroundColor = "white";
-            document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
-        }
+        this.stateNav = 0;
+        console.log(this.stateNav)
+        document.getElementById("mySidenav").style.width = "0px";
+        document.getElementById("main").style.marginLeft= "16px";
+        document.getElementById("menutoggle").style.marginLeft = "8px";
+        // document.body.style.backgroundColor = "white";
+        document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
+    }
+    
+    openNav() {
+        this.stateNav = 1;
+        console.log(this.stateNav)
+        document.getElementById("mySidenav").style.width = "120px";
+        document.getElementById("main").style.marginLeft = "136px";
+        document.getElementById("menutoggle").style.marginLeft = "128px";
+        // document.body.style.backgroundColor = "#A1A1A1";
+        document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
     }
     
     toggleNav() {
         if (this.stateNav == 0) {
-            this.stateNav = 1;
-            console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "120px";
-            document.getElementById("main").style.marginLeft = "136px";
-            document.getElementById("menutoggle").style.marginLeft = "128px";
-            // document.body.style.backgroundColor = "#A1A1A1";
-            document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
+            this.openNav();
         } else {
-            this.stateNav = 0;
-            console.log(this.stateNav)
-            document.getElementById("mySidenav").style.width = "0px";
-            document.getElementById("main").style.marginLeft= "16px";
-            document.getElementById("menutoggle").style.marginLeft = "8px";
-            // document.body.style.backgroundColor = "white";
-            document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
+            this.closeNav();
         }
     }
     
