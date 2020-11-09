@@ -76,7 +76,7 @@ th {
 }
 table a {
     text-decoration: none;
-    color: #888888;
+    color: #0000FF;
 }
 table a:hover {
     color: #FF0000;
@@ -120,6 +120,7 @@ table a:hover {
 .panel {
     font-family: Lato;
     font-size: 14px;
+    line-height: 1.6;
     padding: 0 18px;
     background-color: #EEEEEE;
     max-height: 0;
