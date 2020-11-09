@@ -111,6 +111,7 @@ table a:hover {
     z-index: 1;
     transition: 0.5s;
     
+    font-family: sans-serif;
     background-color: #111;
     padding-left: 32px;
     font-size: 16px;
@@ -128,7 +129,7 @@ table a:hover {
 
 .sidenav a:hover {
     color: #FF0000;
-    padding-left: 48px;
+    padding-left: 32px;
 }
 
 .sidenav .togglebtn {
@@ -155,11 +156,11 @@ table a:hover {
     body{font-size: 12px;}
     th, td{font-size: 12px;}
     .sidenav {padding-top: 12px;}
-    .sidenav a {font-size: 12px;  padding-top: 12px;}
+    .sidenav a {font-size: 14px;  padding-top: 12px;}
 }
 
 @media screen and (max-width: 600px) {
     body{font-size: 12px;}
     th, td{font-size: 12px;}
-    .sidenav a {font-size: 12px; padding-top: 12px;}
+    .sidenav a {font-size: 14px; padding-top: 12px;}
 }
