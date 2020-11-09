@@ -51,6 +51,11 @@ class NavBar {
         }
     }
     
+    initNav() {
+        openNav();
+        closeNav();
+    }
+    
     open_link(input_link) {
         console.log("hear you "+input_link);
         this.closeNav();
