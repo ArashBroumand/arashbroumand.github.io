@@ -12,7 +12,7 @@ class NavBar {
         document.getElementById("main").style.marginLeft= "16px";
         document.getElementById("menutoggle").style.marginLeft = "8px";
         // document.body.style.backgroundColor = "white";
-        document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
+        document.getElementById("menu_hndl").innerHTML = "menu"; // &#9776;
     }
     
     openNav() {
@@ -22,7 +22,7 @@ class NavBar {
         document.getElementById("main").style.marginLeft = "136px";
         document.getElementById("menutoggle").style.marginLeft = "128px";
         // document.body.style.backgroundColor = "#A1A1A1";
-        document.getElementById("menu_hndl").innerHTML = "||| close menu"; // &#9776; 
+        document.getElementById("menu_hndl").innerHTML = "menu"; // &#9776; 
     }
     
     toggleNav() {
@@ -45,15 +45,13 @@ class NavBar {
         } else if (this.selectedTab == "Research") {
             this.closeNav();
             setTimeout(() => {window.open("./research.html","_self");}, 500);
+        } else if (this.selectedTab == "Tutoring") {
+            this.closeNav();
+            setTimeout(() => {window.open("./tutoring.html","_self");}, 500);
         } else if (this.selectedTab == "Blog") {
             this.closeNav();
             setTimeout(() => {window.open("./blog.html","_self");}, 500);
-        }
-    }
-    
-    initNav() {
-        openNav();
-        closeNav();
+        } 
     }
     
     open_link(input_link) {
@@ -65,4 +63,4 @@ class NavBar {
 
 let navBar = new NavBar();       
 
-document.getElementById("menu_hndl").innerHTML = "||| open menu"; // &#9776;
+document.getElementById("menu_hndl").innerHTML = "||| menu"; // &#9776;
