@@ -1,2 +1,4 @@
 # arashbroumand.github.io
-# a personal and educational page
+# Arash Broumand 's home page
+#
+# contains general info, educational background, some tutorial, personal notes, etc.
