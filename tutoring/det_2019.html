@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title> A.Broumand|Tutoring|DET2019 </title>
+        <link rel="stylesheet" href="styles_solutions.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    
+    <body>
+        <div class="back_icon">
+            <a href="../tutoring.html">&laquo;</a> <!-- Left arrow: &#8630; ANTICLOCKWISE TOP SEMICIRCLE ARROW: &#8592; -->
+        </div>
+        
+        <div id="header" class="header">
+            Detection and Estimation Theory
+            <br />
+            Selected Problems and Solutions
+        </div>
+        
+        <div id="content" class="content">
+            
+            <hr />
+            <p>
+                <b>Problem:</b><br />
+                Show that the minimum-Bayes-risk function \( V \) (defined in section II.C of Vincent Poor's <i>Signal Detection and Estimation</i>) is concave and continuous on \( [0,1] \).
+                </br>
+                [After showing that \( V \) is concave, you may use the fact that any concave function on \( [0,1] \) is continuous on \( (0,1) \).]
+
+            </p>
+            <p>
+                <b>Solution:</b><br /><br />
+
+                \( V(\pi_0) = \pi_0 R_0(\delta_{\pi_0}) + (1-\pi_0) R_1(\delta_{\pi_0}) \)
+                <br /><br />
+                \( \forall \pi_0, 0\leq \pi_0 \leq 1; \exists \alpha, \pi_1, \pi_2, 0 \leq \alpha, \pi_1, \pi_2 \leq 1, \) so that \( \pi_0 = \alpha \pi_1 + (1 - \alpha) \pi_2 \)
+                
+                \[
+                \begin{array}{l l}
+                V(\pi_0) & = V(\alpha \pi_1 + (1 - \alpha) \pi_2) \\\\
+                & = [\alpha \pi_1 + (1 - \alpha) \pi_2] R_0(\delta_{\pi_0}) + [1-(\alpha \pi_1 + (1 - \alpha) \pi_2)]R_1(\delta_{\pi_0})  \\\\
+                & = [\alpha \pi_1 + (1 - \alpha) \pi_2] R_0(\delta_{\pi_0}) + [\alpha + (1-\alpha)-(\alpha \pi_1 + (1 - \alpha) \pi_2)]R_1(\delta_{\pi_0})  \\\\
+                & = \alpha \pi_0 R_0(\delta_{\pi_0}) + (1-\alpha)\pi_2 R_0(\delta_{\pi_0}) + \alpha (1-\pi_1) R_1(\delta_{\pi_0}) + (1-\alpha)(1-\pi_2)R_1(\delta_{\pi_0})\\\\
+                & = \alpha [\pi_1 R_0(\delta_{\pi_0})+(1-\pi_1)R_1(\delta_{\pi_0})] + (1-\alpha) [ \pi_2 R_0(\delta_{\pi_0}) + (1-\pi_2) R_1(\delta_{\pi_0}) ] \\\\
+                & = \alpha r(\pi_1, \delta_{\pi_0}) + (1-\alpha) r(\pi_2, \delta_{\pi_0}) \\\\
+                \end{array}
+                \]
+                \( r(\pi_j,\delta_{\pi_0}) \) is the average risk of \( \delta_{\pi_0} \) rule, if the prior is actually \( \pi_j \).
+                Since the Bayes rule is optimum, \( r(\pi_j, \delta_{\pi_0}) \geq r(\pi_j, \delta_{\pi_j}) = V(\pi_j), \forall \pi_0 \). So,
+                <br />
+
+                \[ V(\alpha \pi_1 + (1 - \alpha) \pi_2) \geq \alpha V(\pi_1) + (1-\alpha) V(\pi_2) \]
+
+                i.e., \( V(\pi) \) is concave on \( [0,1] \). Since it is a concave function, it is also continuous on \( [0,1] \).
+                
+            <p>
+            <hr />
+        </div>
+    </body>
+</html>            
