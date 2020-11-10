@@ -13,15 +13,36 @@ body {
 #h1 {
     font-size: 10vw;
 }
-#p {
-    font-family: "Lato", sans-serif;
+*/
+p {
+    font-family: Lato;
     color: #010101;
 }
-*/
+p a {
+    text-decoration: none;
+    color: #0000FF;
+    transition: 0.3s;
+}
+p a:hover {
+    color: #FF0000;
+}
 
 .header {
     font-size:24px; 
     font-variant: small-caps;
+}
+
+.columns {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left_col{
+    flex: 60%;
+}
+
+.right_col{
+    flex: 40%;
 }
 
 .footer {
@@ -50,7 +71,7 @@ body {
 
 .list a {
     text-decoration: none;
-    color: #111;
+    color: #0000FF;
     transition: 0.3s;
 }
 
@@ -213,4 +234,5 @@ table a:hover {
     .sidenav a {font-size: 14px; padding-top: 12px;}
     .accordin{font-size:12px;}
     .pannel{font-size:12px;}
+    .left_col{flex: 100%;}
 }
