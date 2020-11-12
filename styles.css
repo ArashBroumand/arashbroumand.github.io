@@ -95,6 +95,15 @@ td {
     padding-right: 16px;
     padding-top: 4px;
 }
+td#col1{
+    width: 15%
+}
+td#col2{
+    width: 15%
+}
+td#col1{
+    width: 60%
+}
 th {
     font-weight: bold;
     width: 10%;
