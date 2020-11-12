@@ -79,7 +79,7 @@ p a:hover {
     color: #FF0000;
 }
 
-table, th, td {
+table {
     width: 100%;
     font-size: 14px;
     border: 0px solid white;
