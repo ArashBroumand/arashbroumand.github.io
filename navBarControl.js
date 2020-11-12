@@ -63,4 +63,4 @@ class NavBar {
 
 let navBar = new NavBar();       
 
-document.getElementById("menu_hndl").innerHTML = "||| menu"; // &#9776;
+document.getElementById("menu_hndl").innerHTML = "menu"; // &#9776; ||| 
