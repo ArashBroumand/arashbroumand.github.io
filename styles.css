@@ -99,10 +99,10 @@ td#col1{
     width: 15%
 }
 td#col2{
-    width: 15%
+    width: 12%
 }
 td#col3{
-    width: 60%
+    width: 100%
 }
 th {
     font-weight: bold;
@@ -122,7 +122,7 @@ table a:hover {
 }
 
 .accordion {
-    width: 60%;
+    width: 100%;
     font-family: Lato;
     font-size: 14px;
     background-color: #EEEEEE;
@@ -157,11 +157,11 @@ table a:hover {
 }
 
 .panel {
-    width: 60%;
+    width: 100%;
     font-family: Lato;
     font-size: 14px;
     line-height: 1.6;
-    padding: 0 18px;
+    padding: 0 0 0 8px;
     background-color: #EEEEEE;
     max-height: 0;
     overflow: hidden;
