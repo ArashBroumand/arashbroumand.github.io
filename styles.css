@@ -104,6 +104,7 @@ table a:hover {
 }
 
 .accordion {
+    width: 50%;
     font-family: Lato;
     font-size: 14px;
     background-color: #EEEEEE;
