@@ -139,6 +139,7 @@ table a:hover {
 }
 
 .panel {
+    width: 50%;
     font-family: Lato;
     font-size: 14px;
     line-height: 1.6;
