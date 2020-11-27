@@ -1,4 +1,3 @@
-arashbroumand.github.io<arashbroumand.github.io>
-# Arash Broumand's personal page
+# [Arash Broumand's personal page]<arashbroumand.github.io>
 
 contains general info, educational background, some tutorial, personal notes, etc.
